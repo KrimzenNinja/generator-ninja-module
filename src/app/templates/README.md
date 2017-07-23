@@ -1,6 +1,6 @@
 # <%= name %>
 
-[![Generated with nod](https://img.shields.io/badge/generator-nod-2196F3.svg?style=flat-square)](https://github.com/diegohaz/nod)
+[![Generated with ninja-module](https://img.shields.io/badge/generator-ninja-module.svg?style=flat-square)](https://github.com/KrimzenNinja/generator-ninja-module)
 [![NPM version](https://img.shields.io/npm/v/<%= name %>.svg?style=flat-square)](https://npmjs.org/package/<%= name %>)
 [![Build Status](https://img.shields.io/travis/<%= repository %>/master.svg?style=flat-square)](https://travis-ci.org/<%= repository %>) [![Coverage Status](https://img.shields.io/codecov/c/github/<%= repository %>/master.svg?style=flat-square)](https://codecov.io/gh/<%= repository %>/branch/master)
 

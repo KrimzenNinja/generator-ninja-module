@@ -94,7 +94,7 @@ export default class extends Generator {
     }
 
     async writing() {
-        const repository = 'https://github.com/diegohaz/nod';
+        const repository = 'https://github.com/KrimzenNinja/npm-module-template';
         const { name: cwd } = tmp.dirSync();
         const spinner = ora(`Cloning ${repository} ...`).start();
         await Clone(repository, cwd);
@@ -110,14 +110,14 @@ export default class extends Generator {
             this.fs.copy(repoPath(file), this.destinationPath(file));
             const contents: string = this.fs
                 .read(this.destinationPath(file))
-                .replace(/https:\/\/github.com\/diegohaz\/nod/g, this.answers.homepage)
-                .replace(/https:\/\/github.com\/diegohaz/g, this.answers.authorUrl)
-                .replace(/diegohaz\/nod/g, this.answers.repository)
-                .replace(/generator-nod/g, this.answers.name)
-                .replace(/hazdiego@gmail.com/g, this.answers.authorEmail)
-                .replace(/diegohaz/g, this.answers.githubUsername)
-                .replace(/Diego Haz/g, this.answers.authorName)
-                .replace(/My node module/g, this.answers.description);
+                .replace(/https:\/\/github.com\/KrimzenNinja\/npm-module-template/g, this.answers.homepage)
+                .replace(/https:\/\/github.com\/eXigentCoder/g, this.answers.authorUrl)
+                .replace(/KrimzenNinja\/npm-module-template/g, this.answers.repository)
+                .replace(/npm-module-template/g, this.answers.name)
+                .replace(/potz666@gmail.com/g, this.answers.authorEmail)
+                .replace(/eXigentCoder/g, this.answers.githubUsername)
+                .replace(/Ryan Kotzen/g, this.answers.authorName)
+                .replace(/Template project for building KrimZen Ninja npm templates/g, this.answers.description);
             this.fs.write(this.destinationPath(file), contents);
         });
     }

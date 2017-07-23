@@ -8,7 +8,7 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
 
 jest.mock('inquirer-npm-name', () => (prompt, inquirer) => inquirer.prompt(prompt));
 
-const run = () => helpers.run(path.join(__dirname));
+const run = () => helpers.run(path.join(__dirname, '../src/app'));
 
 describe('app', () => {
     const files = [

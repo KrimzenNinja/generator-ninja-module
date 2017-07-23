@@ -22,7 +22,6 @@
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
-    "postcoverage": "opn coverage/lcov-report/index.html",
     "lint": "eslint src",
     "flow": "flow check",
     "build:clean": "del generators",
@@ -33,7 +32,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "prepublish": "npm run lint && npm test && npm run build",
+    "prepublishOnly": "npm run lint && npm test && npm run build",
     "postpublish": "git push --follow-tags"
   },
   "watch": {
@@ -94,7 +93,6 @@
     "jest-cli": "^18.1.0",
     "ncp": "^2.0.0",
     "npm-watch": "^0.1.7",
-    "opn-cli": "^3.1.0",
     "prettier": "^1.4.4",
     "yeoman-assert": "^2.2.2",
     "yeoman-test": "^1.6.0"

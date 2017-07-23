@@ -11,3 +11,8 @@
 ## License
 
 MIT © [Ryan Kotzen](https://github.com/eXigentCoder)
+
+## Reference
+
+This project borrows heavily from https://github.com/diegohaz/nod/tree/generator-nod
+

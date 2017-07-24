@@ -28,5 +28,5 @@ MIT © [Ryan Kotzen](https://github.com/eXigentCoder)
 
 ## Reference
 
-This project borrows heavily from https://github.com/diegohaz/nod/tree/generator-nod
+This project is based off of [generator-nod](https://github.com/diegohaz/nod/tree/generator-nod) but points generates off a different [base project](https://github.com/KrimzenNinja/npm-module-template) which follows different conventions. 
 

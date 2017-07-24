@@ -1,6 +1,6 @@
 {
   "name": "generator-ninja-module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NodeJS modules generator with ES6 (Babel), Jest, Flow, Travis, Codecov, Documentation, Snyk and more.",
   "homepage": "https://github.com/KrimzenNinja/generator-ninja-module",
   "repository": {

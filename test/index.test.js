@@ -13,18 +13,15 @@ const run = () => helpers.run(path.join(__dirname, '../src/app'));
 describe('app', () => {
     const files = [
         'src/index.js',
-        'test/index.js',
+        'test/basic.unit.js',
         '.babelrc',
         '.editorconfig',
         '.eslintrc',
         '.flowconfig',
         '.gitignore',
-        '.travis.yml',
         'LICENSE',
         'README.md',
-        'index.js',
-        'package.json',
-        'yarn.lock'
+        'package.json'
     ];
 
     it('copies files properly', async () => {

@@ -1,6 +1,7 @@
 # <%= name %>
 
 ![NPM](https://nodei.co/npm/<%= name %>.png)
+
 ![CircleCi](https://circleci.com/gh/<%= repository %>.svg?style=shield)
 ![Known Vulnerabilities](https://snyk.io/test/npm/<%= name %>/badge.svg)
 [![codecov](https://codecov.io/gh/<%= repository %>/branch/master/graph/badge.svg)](https://codecov.io/gh/<%= repository %>)

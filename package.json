@@ -1,7 +1,7 @@
 {
   "name": "generator-ninja-module",
   "version": "1.0.0",
-  "description": "NodeJS modules generator with ES6 (Babel), Jest, Flow, CircleCI, Codecov, Documentation, Snyk, Nsp and more. This generator allows you to build node modules that follow the KrimZen Ninja conventions.",
+  "description": "NodeJS modules generator with ES6 (Babel), Jest, Flow, CircleCI, Codecov, Documentation, Snyk, Nsp, prettier and more. This generator allows you to build node modules that follow the KrimZen Ninja conventions.",
   "homepage": "https://github.com/KrimzenNinja/generator-ninja-module",
   "repository": {
     "type": "git",
@@ -56,6 +56,7 @@
     "node",
     "npm",
     "es6",
+    "prettier",
     "babel",
     "jest",
     "flow",

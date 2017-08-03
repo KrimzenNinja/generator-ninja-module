@@ -16,9 +16,7 @@
     },
     "plugins": [
         "node",
-        "prettier",
-        "flowtype",
-        "flowtype-errors"
+        "prettier"
     ],
     "extends": [
         "eslint:recommended",
@@ -63,7 +61,6 @@
                 "tabWidth": 4,
                 "printWidth": 120
             }
-        ],
-        "flowtype-errors/show-errors": 2
+        ]
     }
 }

@@ -1,4 +1,3 @@
-// @flow
 import _ from 'lodash';
 import fs from 'fs';
 import path from 'path';
@@ -9,26 +8,15 @@ import tmp from 'tmp';
 import ora from 'ora';
 import { Clone } from 'nodegit';
 
-type Answers = {
-    name: string,
-    description: string,
-    githubUsername: string,
-    repository: string,
-    homepage: string,
-    authorName: string,
-    authorEmail: string,
-    authorUrl: string
-};
-
 export default class extends Generator {
-    answers: Answers;
+    answers;
 
-    constructor(...args: Array<any>) {
+    constructor(...args) {
         super(...args);
         this.argument('name', { type: String, required: false });
     }
 
-    getGitHubUsername = (): Promise<string> =>
+    getGitHubUsername = () =>
         new Promise(resolve => {
             // istanbul ignore next
             try {
@@ -66,12 +54,12 @@ export default class extends Generator {
             {
                 name: 'repository',
                 message: 'What is the repository of your module?',
-                default: ({ githubUsername }): string => `${githubUsername}/${name}`
+                default: ({ githubUsername }) => `${githubUsername}/${name}`
             },
             {
                 name: 'homepage',
                 message: 'What is the homepage of your module?',
-                default: ({ repository }): string => `https://github.com/${repository}`
+                default: ({ repository }) => `https://github.com/${repository}`
             },
             {
                 name: 'authorName',
@@ -86,7 +74,7 @@ export default class extends Generator {
             {
                 name: 'authorUrl',
                 message: 'What is your homepage?',
-                default: ({ githubUsername }): string => `https://github.com/${githubUsername}`
+                default: ({ githubUsername }) => `https://github.com/${githubUsername}`
             }
         ]);
 
@@ -100,15 +88,15 @@ export default class extends Generator {
         await Clone(repository, cwd);
         spinner.stop();
         const ignore = ['**/.git/**', 'README.md'];
-        const files: Array<string> = glob.sync('**/*', { cwd, ignore, dot: true });
-        const repoPath = (...args): string => path.join(cwd, ...args);
+        const files = glob.sync('**/*', { cwd, ignore, dot: true });
+        const repoPath = (...args) => path.join(cwd, ...args);
 
         this.fs.copyTpl(this.templatePath('README.md'), this.destinationPath('README.md'), this.answers);
 
-        files.forEach((file: string) => {
+        files.forEach(file => {
             if (fs.statSync(repoPath(file)).isDirectory()) return;
             this.fs.copy(repoPath(file), this.destinationPath(file));
-            const contents: string = this.fs
+            const contents = this.fs
                 .read(this.destinationPath(file))
                 .replace(/https:\/\/github.com\/KrimzenNinja\/krimzen-ninja-module-template/g, this.answers.homepage)
                 .replace(/https:\/\/github.com\/eXigentCoder/g, this.answers.authorUrl)

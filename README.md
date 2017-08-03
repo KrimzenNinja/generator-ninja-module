@@ -2,7 +2,6 @@
 
 This generator will allow you build node modules using the [KrimZen Ninja](https://github.com/KrimZenNinja) conventions. These generally leverage:
 * es6 (babel)
-* flow typing
 * snyk & nsp dependency checking
 * prettier formatting
 * eslint linting

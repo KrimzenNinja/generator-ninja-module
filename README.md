@@ -12,7 +12,7 @@ This generator will allow you build node modules using the [KrimZen Ninja](https
 * auto-generated documentation
 * More features to come 
 
-The template used can be found [here](https://github.com/KrimzenNinja/npm-module-template).
+The template used can be found [here](https://github.com/KrimzenNinja/krimzen-ninja-module-template).
 
 ## Install
 
@@ -28,5 +28,5 @@ MIT © [Ryan Kotzen](https://github.com/eXigentCoder)
 
 ## Reference
 
-This project is based off of [generator-nod](https://github.com/diegohaz/nod/tree/generator-nod) but points generates off a different [base project](https://github.com/KrimzenNinja/npm-module-template) which follows different conventions. 
+This project is based off of [generator-nod](https://github.com/diegohaz/nod/tree/generator-nod) but points generates off a different [base project](https://github.com/KrimzenNinja/krimzen-ninja-module-template) which follows different conventions. 
 

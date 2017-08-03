@@ -94,7 +94,7 @@ export default class extends Generator {
     }
 
     async writing() {
-        const repository = 'https://github.com/KrimzenNinja/npm-module-template';
+        const repository = 'https://github.com/KrimzenNinja/krimzen-ninja-module-template';
         const { name: cwd } = tmp.dirSync();
         const spinner = ora(`Cloning ${repository} ...`).start();
         await Clone(repository, cwd);
@@ -110,10 +110,10 @@ export default class extends Generator {
             this.fs.copy(repoPath(file), this.destinationPath(file));
             const contents: string = this.fs
                 .read(this.destinationPath(file))
-                .replace(/https:\/\/github.com\/KrimzenNinja\/npm-module-template/g, this.answers.homepage)
+                .replace(/https:\/\/github.com\/KrimzenNinja\/krimzen-ninja-module-template/g, this.answers.homepage)
                 .replace(/https:\/\/github.com\/eXigentCoder/g, this.answers.authorUrl)
-                .replace(/KrimzenNinja\/npm-module-template/g, this.answers.repository)
-                .replace(/npm-module-template/g, this.answers.name)
+                .replace(/KrimzenNinja\/krimzen-ninja-module-template/g, this.answers.repository)
+                .replace(/krimzen-ninja-module-template/g, this.answers.name)
                 .replace(/potz666@gmail.com/g, this.answers.authorEmail)
                 .replace(/eXigentCoder/g, this.answers.githubUsername)
                 .replace(/Ryan Kotzen/g, this.answers.authorName)

@@ -17,7 +17,6 @@ describe('app', () => {
         '.babelrc',
         '.editorconfig',
         '.eslintrc',
-        '.flowconfig',
         '.gitignore',
         'LICENSE',
         'README.md',

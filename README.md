@@ -1,5 +1,7 @@
 # generator-ninja-module
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KrimzenNinja/generator-ninja-module.svg)](https://greenkeeper.io/)
+
 This generator will allow you build node modules using the [KrimZen Ninja](https://github.com/KrimZenNinja) conventions. These generally leverage:
 * es6 (babel)
 * snyk & nsp dependency checking

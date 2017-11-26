@@ -22,7 +22,8 @@
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
-    "lint": "eslint src",
+    "lint": "npm run lint-ci -- --fix",
+    "lint-ci": "eslint src",
     "build:clean": "rimraf generators",
     "build:copy": "ncp src generators",
     "prebuild": "npm run build:clean && npm run build:copy",

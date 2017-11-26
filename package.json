@@ -79,6 +79,7 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.1.8",
     "babel-preset-stage-2": "^6.18.0",
+    "codecov": "^3.0.0",
     "eslint": "^3.13.1",
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-node": "^5.1.0",
@@ -87,9 +88,7 @@
     "ncp": "^2.0.0",
     "npm-watch": "^0.1.7",
     "prettier": "^1.4.4",
-    "rimraf": "2.6.1",
-    "yeoman-assert": "^2.2.2",
-    "yeoman-test": "^1.6.0"
+    "rimraf": "2.6.1"
   },
   "license": "MIT"
 }

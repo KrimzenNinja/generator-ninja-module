@@ -83,7 +83,7 @@
     "babel-preset-stage-2": "^6.18.0",
     "codecov": "^3.0.0",
     "eslint": "^4.12.0",
-    "eslint-config-prettier": "^2.2.0",
+    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-prettier": "^2.1.2",
     "jest-cli": "^22.0.0",

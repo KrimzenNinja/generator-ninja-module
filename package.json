@@ -72,7 +72,7 @@
     "nodegit": "^0.22.0",
     "ora": "^2.0.0",
     "tmp": "^0.0.33",
-    "yeoman-generator": "^2.0.1"
+    "yeoman-generator": "^4.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
